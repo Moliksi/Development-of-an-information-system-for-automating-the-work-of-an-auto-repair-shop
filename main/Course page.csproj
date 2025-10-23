@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE4F7736-1DB3-4FDA-AEED-1A2F65985AC7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Course_page</RootNamespace>
+    <AssemblyName>Course page</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Course_paperDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Course_paperDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Course_paperDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Course_paperDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Course_paperDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Course_paperDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Course_paperDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Course_paperDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Course_paperDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Course_paperDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Course_paperDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Course_paperDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Course_paperDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Course_paperDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Course_paperDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Course_paperDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Course_paperDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Course_paperDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Course_paperDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Course_paperDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Course_paperDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Course_paperDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Course_paperDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Course_paperDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Course_paperDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Course_paperDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Course_paperDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Course_paperDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Course_paperDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Course_paperDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Course_paperDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Course_paperDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddUser.Designer.cs">
+      <DependentUpon>FormAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdministrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdministrator.Designer.cs">
+      <DependentUpon>FormAdministrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAvto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAvto.Designer.cs">
+      <DependentUpon>FormAvto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClient.Designer.cs">
+      <DependentUpon>FormClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContract.Designer.cs">
+      <DependentUpon>FormContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInputAdministrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInputAdministrator.Designer.cs">
+      <DependentUpon>FormInputAdministrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRepair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRepair.Designer.cs">
+      <DependentUpon>FormRepair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSpecialists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSpecialists.Designer.cs">
+      <DependentUpon>FormSpecialists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsed_spare_parts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsed_spare_parts.Designer.cs">
+      <DependentUpon>FormUsed_spare_parts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAddUser.resx">
+      <DependentUpon>FormAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdministrator.resx">
+      <DependentUpon>FormAdministrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvto.resx">
+      <DependentUpon>FormAvto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClient.resx">
+      <DependentUpon>FormClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContract.resx">
+      <DependentUpon>FormContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputAdministrator.resx">
+      <DependentUpon>FormInputAdministrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRepair.resx">
+      <DependentUpon>FormRepair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSpecialists.resx">
+      <DependentUpon>FormSpecialists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsed_spare_parts.resx">
+      <DependentUpon>FormUsed_spare_parts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Course_paperDataSet.xsc">
+      <DependentUpon>Course_paperDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Course_paperDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Course_paperDataSet.xss">
+      <DependentUpon>Course_paperDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet1.xsc">
+      <DependentUpon>Course_paperDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Course_paperDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Course_paperDataSet1.xss">
+      <DependentUpon>Course_paperDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet10.xsc">
+      <DependentUpon>Course_paperDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Course_paperDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Course_paperDataSet10.xss">
+      <DependentUpon>Course_paperDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet11.xsc">
+      <DependentUpon>Course_paperDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Course_paperDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Course_paperDataSet11.xss">
+      <DependentUpon>Course_paperDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet12.xsc">
+      <DependentUpon>Course_paperDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Course_paperDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Course_paperDataSet12.xss">
+      <DependentUpon>Course_paperDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet13.xsc">
+      <DependentUpon>Course_paperDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Course_paperDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Course_paperDataSet13.xss">
+      <DependentUpon>Course_paperDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet14.xsc">
+      <DependentUpon>Course_paperDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Course_paperDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Course_paperDataSet14.xss">
+      <DependentUpon>Course_paperDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet15.xsc">
+      <DependentUpon>Course_paperDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Course_paperDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Course_paperDataSet15.xss">
+      <DependentUpon>Course_paperDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet2.xsc">
+      <DependentUpon>Course_paperDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Course_paperDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Course_paperDataSet2.xss">
+      <DependentUpon>Course_paperDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet3.xsc">
+      <DependentUpon>Course_paperDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Course_paperDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Course_paperDataSet3.xss">
+      <DependentUpon>Course_paperDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet4.xsc">
+      <DependentUpon>Course_paperDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Course_paperDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Course_paperDataSet4.xss">
+      <DependentUpon>Course_paperDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet5.xsc">
+      <DependentUpon>Course_paperDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Course_paperDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Course_paperDataSet5.xss">
+      <DependentUpon>Course_paperDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet6.xsc">
+      <DependentUpon>Course_paperDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Course_paperDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Course_paperDataSet6.xss">
+      <DependentUpon>Course_paperDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet7.xsc">
+      <DependentUpon>Course_paperDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Course_paperDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Course_paperDataSet7.xss">
+      <DependentUpon>Course_paperDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet8.xsc">
+      <DependentUpon>Course_paperDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Course_paperDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Course_paperDataSet8.xss">
+      <DependentUpon>Course_paperDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet9.xsc">
+      <DependentUpon>Course_paperDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Course_paperDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Course_paperDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Course_paperDataSet9.xss">
+      <DependentUpon>Course_paperDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

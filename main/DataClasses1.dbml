@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Course paper" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-O74EA9U\SQLEXPRESS;Initial Catalog=&quot;Course paper&quot;;Integrated Security=True;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="Course_page.Properties.Settings" SettingsPropertyName="Course_paperConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Автомобиль" Member="Автомобиль">
+    <Type Name="Автомобиль">
+      <Column Name="Марка" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Модель" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="НомернойЗнак" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VIN_код" Type="System.String" DbType="NVarChar(17) NOT NULL" CanBeNull="false" />
+      <Column Name="КодКлиента" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="КодАвтомобиля" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Автомобиль_Договор" Member="Договор" ThisKey="КодАвтомобиля" OtherKey="КодАвтомобиля" Type="Договор" />
+      <Association Name="Клиенты_Автомобиль" Member="Клиенты" ThisKey="КодКлиента" OtherKey="КодКлиента" Type="Клиенты" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Клиенты" Member="Клиенты">
+    <Type Name="Клиенты">
+      <Column Name="КодКлиента" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Фамилия" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Имя" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Отчество" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Телефон" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Адрес" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="Клиенты_Автомобиль" Member="Автомобиль" ThisKey="КодКлиента" OtherKey="КодКлиента" Type="Автомобиль" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Ремонт" Member="Ремонт">
+    <Type Name="Ремонт">
+      <Column Name="КодРемонта" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="КодДоговора" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Название" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="ПредварительнаяСтоимость" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Association Name="Договор_Ремонт" Member="Договор" ThisKey="КодДоговора" OtherKey="КодДоговора" Type="Договор" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Специалисты" Member="Специалисты">
+    <Type Name="Специалисты">
+      <Column Name="КодСпециалиста" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Фамилия" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Имя" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Отчество" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Квалификация" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="Специалисты_Договор" Member="Договор" ThisKey="КодСпециалиста" OtherKey="КодСпециалиста" Type="Договор" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Договор" Member="Договор">
+    <Type Name="Договор">
+      <Column Name="КодДоговора" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="КодСпециалиста" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="КодАвтомобиля" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ДатаРемонта" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ВремяРемонта" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="СтоимостьРемонта" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="ВидНеисправности" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Association Name="Договор_Ремонт" Member="Ремонт" ThisKey="КодДоговора" OtherKey="КодДоговора" Type="Ремонт" />
+      <Association Name="Договор_ИзрасходованныеЗапчасти" Member="ИзрасходованныеЗапчасти" ThisKey="КодДоговора" OtherKey="КодДоговора" Type="ИзрасходованныеЗапчасти" />
+      <Association Name="Автомобиль_Договор" Member="Автомобиль" ThisKey="КодАвтомобиля" OtherKey="КодАвтомобиля" Type="Автомобиль" IsForeignKey="true" />
+      <Association Name="Специалисты_Договор" Member="Специалисты" ThisKey="КодСпециалиста" OtherKey="КодСпециалиста" Type="Специалисты" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ИзрасходованныеЗапчасти" Member="ИзрасходованныеЗапчасти">
+    <Type Name="ИзрасходованныеЗапчасти">
+      <Column Name="КодИзрасходованныхЗапчастей" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="КодДоговора" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Детали" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Стоимость" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Association Name="Договор_ИзрасходованныеЗапчасти" Member="Договор" ThisKey="КодДоговора" OtherKey="КодДоговора" Type="Договор" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
