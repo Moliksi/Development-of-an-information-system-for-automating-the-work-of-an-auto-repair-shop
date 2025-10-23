@@ -1,0 +1,34 @@
+G:\Course page\Course page\bin\Debug\Course page.exe.config
+G:\Course page\Course page\bin\Debug\Course page.exe
+G:\Course page\Course page\bin\Debug\Course page.pdb
+G:\Course page\Course page\obj\Debug\Course page.csproj.AssemblyReference.cache
+G:\Course page\Course page\obj\Debug\Course_page.Form1.resources
+G:\Course page\Course page\obj\Debug\Course_page.Properties.Resources.resources
+G:\Course page\Course page\obj\Debug\Course page.csproj.GenerateResource.cache
+G:\Course page\Course page\obj\Debug\Course page.csproj.CoreCompileInputs.cache
+G:\Course page\Course page\obj\Debug\Course page.exe
+G:\Course page\Course page\obj\Debug\Course page.pdb
+G:\Course page\Course page\obj\Debug\Course_page.FormAvto.resources
+G:\Course page\Course page\obj\Debug\Course_page.FormClient.resources
+G:\Course page\Course page\obj\Debug\Course_page.FormContract.resources
+G:\Course page\Course page\obj\Debug\Course_page.FormRepair.resources
+G:\Course page\Course page\obj\Debug\Course_page.FormSpecialists.resources
+G:\Course page\Course page\obj\Debug\Course_page.FormUsed_spare_parts.resources
+F:\Course page\Course page\bin\Debug\Course page.exe.config
+F:\Course page\Course page\bin\Debug\Course page.exe
+F:\Course page\Course page\bin\Debug\Course page.pdb
+F:\Course page\Course page\obj\Debug\Course page.csproj.AssemblyReference.cache
+F:\Course page\Course page\obj\Debug\Course_page.FormAvto.resources
+F:\Course page\Course page\obj\Debug\Course_page.FormClient.resources
+F:\Course page\Course page\obj\Debug\Course_page.FormContract.resources
+F:\Course page\Course page\obj\Debug\Course_page.FormRepair.resources
+F:\Course page\Course page\obj\Debug\Course_page.FormSpecialists.resources
+F:\Course page\Course page\obj\Debug\Course_page.FormUsed_spare_parts.resources
+F:\Course page\Course page\obj\Debug\Course_page.Properties.Resources.resources
+F:\Course page\Course page\obj\Debug\Course page.csproj.GenerateResource.cache
+F:\Course page\Course page\obj\Debug\Course page.csproj.CoreCompileInputs.cache
+F:\Course page\Course page\obj\Debug\Course page.exe
+F:\Course page\Course page\obj\Debug\Course page.pdb
+F:\Course page\Course page\obj\Debug\Course_page.FormAddUser.resources
+F:\Course page\Course page\obj\Debug\Course_page.FormAdministrator.resources
+F:\Course page\Course page\obj\Debug\Course_page.FormInputAdministrator.resources
